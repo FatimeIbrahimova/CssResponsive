@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-part {
+    /* display: grid;
+    grid-template-columns: 50%,50%;
+    margin: 3rem 3rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.left-side h2 {
+    padding-top: 5px;
+}
+
+.left-side h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.left-side p {
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+img {
+    margin-top: 40px;
+}
+
+.right-side {
+    grid-column: 2/3;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 310px 310px;
+    grid-template-rows: 220px 220px;
+}
+
+.right-side h1 {
+    padding-top: 70px;
+    font-size: 25px;
+}
+
+.right {
+    border: 1px solid rgb(163, 162, 162);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.second-part {
+    height: 100vh;
+    margin-top: 150px;
+    margin-left: 130px;
+}
+
+.title {
+    width: 50%;
+}
+
+.title p {
+    padding-top: 35px;
+    font-size: 17px;
+    color: #4a4a4a;
+}
+
+.title h1 {
+    font-style: bold;
+}
+
+.main {
+    height: 110vh;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    flex-direction: row;
+    width: 250px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+
+.second span {
+    flex-direction: row;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.third {
+    display: flex;
+    flex-direction: row;
+}
+
+.third span {
+    width: 250px;
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.main p {
+    color: #323232;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.fourth {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+
+.fourth span {
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media(max-width:576px) {
+    .right-side {
+        grid-template-columns: 1fr;
+        margin-top: 280px;
+        padding-right: 2px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .row1,
+    .row2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
